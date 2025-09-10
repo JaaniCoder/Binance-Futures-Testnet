@@ -1,0 +1,61 @@
+=== LOG FILES - Trading Bot Assignment ===
+
+--- Market Order Test ---
+INFO:trading_bot.basic_bot:Placing Market Order
+Order Details:
+orderId: 5645064355
+symbol: BTCUSDT
+status: NEW
+side: BUY
+type: MARKET
+quantity: 0.001
+price: 0.00
+executedQty: 0.000
+updateTime: 1757489206197
+
+--- Limit Order Test ---
+INFO:trading_bot.basic_bot:Placing Limit Order at 112500
+Order Details:
+orderId: 5645066325
+symbol: BTCUSDT
+status: NEW
+side: BUY
+type: LIMIT
+quantity: 0.001
+price: 112500.00
+executedQty: 0.000
+updateTime: 1757489258651
+
+--- Stop-Market Order Test ---
+INFO:trading_bot.basic_bot:Placing Stop-Market Order with stopPrice=112500
+Order Details:
+orderId: 5645067627
+symbol: BTCUSDT
+status: NEW
+side: BUY
+type: STOP_MARKET
+quantity: 0.001
+stopPrice: 112500.00
+executedQty: 0.000
+updateTime: 1757489300607
+
+--- OCO Order Test ---
+INFO:trading_bot.basic_bot:Current BTCUSDT price: 112866.0
+INFO:trading_bot.basic_bot:Placing OCO Exit Orders on side=SELL; TP=114432.8, SL=109945.2
+OCO Orders placed:
+Take-Profit Order:
+  orderId: 5645070651
+  type: TAKE_PROFIT_MARKET
+  stopPrice: 114432.80
+  side: SELL
+  quantity: 0.001
+  status: NEW
+Stop-Loss Order:
+  orderId: 5645070675
+  type: STOP_MARKET
+  stopPrice: 109945.20
+  side: SELL
+  quantity: 0.001
+  status: NEW
+
+=== END OF LOG FILES ===
